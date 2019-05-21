@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="book" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 445 639" style="enable-background:new 0 0 445 639;" xml:space="preserve">
+<path id="book" fill="#44444F" d="M5,0h435c2.8,0,5,2.2,5,5v629c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V5C0,2.2,2.2,0,5,0z"/>
+<path fill="#65E496" d="M445,467.1L376.1,536c-12,12-12,31.5,0,43.5s31.5,12,43.5,0l25.4-25.4V467.1z"/>
+<path fill="#65E496" d="M445,340.5L295.3,490.2c-12,12-12,31.5,0,43.5c12,12,31.5,12,43.5,0L445,427.5V340.5z"/>
+<rect fill="#3D3D47" width="62.7" height="639"/>
+</svg>
