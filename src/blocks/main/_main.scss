@@ -113,7 +113,7 @@
   }
 }
 
-.feature {  
+.feature {
   &__list{
     margin: 0 70px;
     display: flex;
@@ -121,9 +121,11 @@
     list-style-type: none;
     text-align: center;
   }
+
   &__item{
     margin: 0;
   }
+
   &__mark{
     margin: 0;
     margin-bottom: 20px;
@@ -132,9 +134,151 @@
     font-weight: 100;
     color: $color-text-green;
   }
+
   &__desc{
     margin: 0;
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+.contents {
+  padding-top: 156px;
+  padding-bottom: 256px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: $color-text-grey;
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 90px;
+
+    color: $color-text-green;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__wrapper {
+    display: flex;
+    //justify-content: space-between;
+  }
+
+  &__about {
+    margin-right: 130px;
+    max-width: 470px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-text-grey;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 150px;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    padding-left: 10px;
+    margin-bottom: 6px;
+
+    &::before {
+      content: '+';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+
+      position: relative;
+      left: -10px;
+
+      text-align: center;
+      background: $bg-blue;
+      background-image: linear-gradient(90deg, rgba($color-button-gradient-left, 0.7), rgba($color-button-gradient-right, 0.7));
+      color: $color-text-white;
+    }
+  }
+
+  &__more {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+}
+
+.featured {
+  display: flex;
+
+  &__title {
+    margin: 0;
+    margin-right: 10px;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-text-grey;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    
+    line-height: 0;
+  }
+
+  &__item {
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: $color-button;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--stackoverflow {
+      width: 14px;
+      height: 17px;
+    }
+
+    &--amazone {
+      width: 16px;
+      height: 17px;
+    }
+
+    &--sass {
+      width: 24px;
+      height: 18px;
+    }
   }
 }
