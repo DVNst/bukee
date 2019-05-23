@@ -1,0 +1,174 @@
+.main-header {
+  padding-top: 50px;
+
+  background-image: url('../img/bg.jpg');
+  color: $color-text-white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-nav {
+  display: flex;
+  padding-bottom: 2px;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+
+      right: 0;
+      bottom: -8px;
+    }
+
+    &:hover::after {
+      background: $color-text-green;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 26px;
+  }
+
+  &__link {
+    color: $color-text-white;
+    text-decoration: none;
+  }
+}
+
+.new-book {
+  display: flex;
+  padding-top: 177px;
+  padding-bottom: 162px;
+
+  &__cover {
+    margin: 0;
+    margin-right: 55px;
+  }
+
+  &__desc {
+    margin-right: 100px;
+  }
+}
+
+.new-book-cover {
+  position: relative;
+  line-height: 0;
+
+  &__img {
+    width: 445px;
+    height: 639px;
+  }
+
+  &__name {
+    position: absolute;
+    display: flex;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;    
+    top: 0;
+    left: 0;
+    padding: 110px 30px 52px 65px;
+
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 2px;
+
+    text-transform: uppercase;    
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  &__slogan {
+    margin: 0;
+
+    letter-spacing: 0.6px;
+    color: $color-text-green;
+  }
+
+  &__by {
+    margin: 0;
+    margin-top: auto;
+    margin-left: 20px;
+
+    text-align: left;
+    letter-spacing: -0.45px;
+    color: $color-text-green;
+  }
+}
+
+.new-book-desc {
+  display: flex;  
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 9px;
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 36px;
+
+    letter-spacing: 0.8px;
+    color: $color-text-green;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 24px;
+
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+  }
+
+  &__by {
+    margin: 0;
+    margin-bottom: 25px;
+    order: -1;
+
+    font-size: 18px;
+  }
+
+  &__buy {
+    margin-top: 23px;
+    margin-right: auto;
+    margin-bottom: 18px;
+  }
+
+  &__note {
+    margin-left: -3px;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 22px;    
+  }
+}

@@ -1,3 +1,140 @@
-.main {
-	
+.block {
+  background-color: $bg-white;
+  
+  &--grey {
+    background-color: $bg-ligt-grey;
+  }
+
+  &--dark-grey {
+    background-color: $gb-dark-grey;
+  }
+
+  &--arrow-down {
+    position: relative;
+    margin-top: 61px;
+    margin-bottom: 60px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 63px;
+      top: -63px;
+      left: 0;
+
+      background-image: url(../img/border-top.svg);
+      background-position: center;
+      background-size: 101%;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 63px;
+      bottom: -63px;
+      left: 0;
+
+      background-image: url(../img/border-bottom.svg);
+      background-position: center;
+      background-size: 101%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.author {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  color: $color-text;
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 145px;
+  }
+
+  &__about {
+    margin-right: 165px;
+    padding-top: 15px;
+    letter-spacing: 1.7px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 14px;
+
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-text-grey;
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 41px;
+
+    color: $color-text-green;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__more {
+    margin-top: 0px;
+  }
+
+  &__photo {
+    padding-top: 48px;
+    padding-bottom: 44px;
+    
+    background-image: linear-gradient(to bottom right, rgba($gradient-left, 1), rgba($gradient-right, 1));
+    line-height: 0;
+  }
+
+  &__img {
+    position: relative;
+    left: -44px;
+  }
+
+  &__feature {
+
+  }
+}
+
+.feature {  
+  &__list{
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+  }
+  &__item{
+    margin: 0;
+  }
+  &__mark{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 100;
+    color: $color-text-green;
+  }
+  &__desc{
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
