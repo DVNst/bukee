@@ -8,6 +8,13 @@
   background-size: cover;
 }
 
+.logo {
+  &__img {
+    width: 137px;
+    height: 28px;
+  }
+}
+
 .main-nav {
   display: flex;
   padding-bottom: 2px;
@@ -18,26 +25,27 @@
   font-size: 16px;
   line-height: 16px;
 
-  &__list {
+  &__logo {
+
+  }
+
+  &__list {    
     display: flex;
     list-style-type: none;
   }
 
   &__item {
-    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 3px;
-
-      right: 0;
-      bottom: -8px;
+    &:hover {
+      border-bottom: 3px solid $color-text-green;
     }
 
-    &:hover::after {
-      background: $color-text-green;
+    &--active {
+      border-bottom: 3px solid $color-text-green;
     }
   }
 
@@ -78,29 +86,26 @@
   &__name {
     position: absolute;
     display: flex;
-
+    flex-direction: column;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     top: 0;
     left: 0;
     padding: 110px 30px 52px 65px;
 
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
-
-    flex-direction: column;
+    text-align: center;    
   }
 
   &__title {
     margin: 0;
-    margin-bottom: 2px;
 
     text-transform: uppercase;    
     font-size: 36px;
     line-height: 1.15;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-weight: bold;
   }
 
@@ -127,7 +132,7 @@
   flex-direction: column;
 
   &__title {
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     font-size: 48px;
     line-height: 1.15;
     letter-spacing: 1.9px;
@@ -138,7 +143,7 @@
     margin: 0;
     margin-bottom: 36px;
 
-    letter-spacing: 0.8px;
+    letter-spacing: 1.3px;
     color: $color-text-green;
   }
 
@@ -160,7 +165,7 @@
   }
 
   &__buy {
-    margin-top: 23px;
+    margin-top: 24px;
     margin-right: auto;
     margin-bottom: 18px;
   }
@@ -169,6 +174,7 @@
     margin-left: -3px;
     font-style: italic;
     font-size: 12px;
-    line-height: 22px;    
+    line-height: 22px;
+    letter-spacing: 0.2px;
   }
 }

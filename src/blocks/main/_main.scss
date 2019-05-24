@@ -11,35 +11,28 @@
 
   &--arrow-down {
     position: relative;
-    margin-top: 61px;
+    margin-top: 60px;
     margin-bottom: 60px;
 
-    &::before {
+    &::before, &::after{
       content: '';
       position: absolute;
-      width: 100%;
-      height: 63px;
-      top: -63px;
+      width: 0;
+      height: 0;
       left: 0;
+      border: solid 50vw $gb-dark-grey;
+      border-top-width: 60px;
+      border-bottom-width: 0;
+    }
 
-      background-image: url(../img/border-top.svg);
-      background-position: center;
-      background-size: 101%;
-      background-repeat: no-repeat;
+    &::before {
+      top: -60px;
+      border-color: transparent $gb-dark-grey;
     }
 
     &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 63px;
-      bottom: -63px;
-      left: 0;
-
-      background-image: url(../img/border-bottom.svg);
-      background-position: center;
-      background-size: 101%;
-      background-repeat: no-repeat;
+      bottom: -60px;
+      border-color: $gb-dark-grey transparent transparent;
     }
   }
 }
@@ -48,22 +41,20 @@
   padding-top: 160px;
   padding-bottom: 160px;
 
-  color: $color-text;
-
   &__wrapper {
     display: flex;
     margin-bottom: 145px;
   }
 
   &__about {
-    margin-right: 165px;
+    margin-right: 160px;
     padding-top: 15px;
     letter-spacing: 1.7px;
   }
 
   &__title {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: normal;
   }
@@ -74,6 +65,7 @@
 
     font-size: 48px;
     line-height: 48px;
+    letter-spacing: 1.5px;
     color: $color-text-grey;
   }
 
@@ -81,18 +73,22 @@
     margin: 0;
     margin-bottom: 41px;
 
-    color: $color-text-green;
     font-size: 18px;
     line-height: 18px;
+    letter-spacing: 0.9px;
+    color: $color-text-green;
   }
 
   &__text {
     margin: 0;
     margin-bottom: 24px;
+    letter-spacing: 0.6px;
   }
 
   &__more {
-    margin-top: 0px;
+    margin-top: 24px;
+    padding-right: 28px;
+    padding-left: 28px;
   }
 
   &__photo {
@@ -105,11 +101,9 @@
 
   &__img {
     position: relative;
+    width: 438px;
+    height: 466px;
     left: -44px;
-  }
-
-  &__feature {
-
   }
 }
 
@@ -143,7 +137,7 @@
 }
 
 .contents {
-  padding-top: 156px;
+  padding-top: 153px;
   padding-bottom: 256px;
 
   &__title {
@@ -152,27 +146,30 @@
 
     font-size: 48px;
     line-height: 48px;
+    letter-spacing: 2px;
     text-align: center;
     color: $color-text-grey;
   }
 
   &__slogan {
     margin: 0;
-    margin-bottom: 90px;
+    margin-bottom: 83px;
 
-    color: $color-text-green;
-    text-align: center;
     font-size: 18px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: $color-text-green;
   }
 
   &__wrapper {
     display: flex;
-    //justify-content: space-between;
+    justify-content: space-between;
   }
 
   &__about {
-    margin-right: 130px;
-    max-width: 470px;
+    //margin-right: 130px;
+    flex-basis: 470px;
+    
   }
 
   &__subtitle {
@@ -181,30 +178,38 @@
 
     font-size: 24px;
     line-height: 24px;
+    letter-spacing: 1.2px;
     color: $color-text-grey;
   }
 
   &__text {
     margin: 0;
     margin-bottom: 30px;
+
+    letter-spacing: 0.6px;
   }
 
   &__list {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;    
     padding: 0;
+    padding-top: 5px;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 150px;
+    max-height: 160px;
 
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
     list-style-type: none;
   }
 
   &__item {
-    padding-left: 10px;
-    margin-bottom: 6px;
+    padding-left: 12px;
+
+    margin-bottom: 8px;
+    margin-right: 35px;
 
     &::before {
       content: '+';
@@ -213,7 +218,7 @@
       height: 22px;
 
       position: relative;
-      left: -10px;
+      left: -12px;
 
       text-align: center;
       background: $bg-blue;
@@ -222,9 +227,12 @@
     }
   }
 
+  &__table {
+    flex-basis: 570px;
+  }
+
   &__more {
-    padding-right: 45px;
-    padding-left: 45px;
+    padding: 14px 45px;
   }
 
 }
@@ -234,10 +242,11 @@
 
   &__title {
     margin: 0;
-    margin-right: 10px;
+    margin-right: 23px;
 
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 1.1px;
     color: $color-text-grey;
   }
 
@@ -280,5 +289,360 @@
       width: 24px;
       height: 18px;
     }
+  }
+}
+
+.other-books {
+  padding-top: 150px;
+  padding-bottom: 161px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $color-text-grey;
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 88px;
+
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.9px;
+    color: $color-text-green;
+  }
+
+  &__list {
+    margin: 0;
+    margin-bottom: 84px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    text-align: center
+    
+    //line-height: 0;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__cover {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 18px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $color-text-grey;
+  }
+
+  &__desk {
+    margin: 0 20px 16px;
+
+    letter-spacing: 0.6px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__more {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: $color-text-green;
+  }
+
+  &__more-all {
+    padding: 12px 33px;
+  }
+}
+
+.other-books-cover {  
+  position: relative;
+  width: 269px;
+  height: 409px;
+
+  &__img {
+    width: 269px;
+    height: 409px;
+  }
+
+  &__name {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px 33px 54px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 14px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-text-white;
+  }
+
+  &__slogan {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.7px;
+    color: $color-text-green;
+  }
+
+  &__by {
+    margin: 0;
+    margin-top: auto;
+    margin-right: 13px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.7px;
+    color: $color-text-green;
+  }
+}
+
+.testimonial {
+  padding-top: 165px;
+  padding-bottom: 160px;
+  color: $color-text-blue;
+
+  &__list {
+    margin: 0 210px;
+    margin-bottom: 49px;
+
+    list-style-type: none;
+    text-align: center;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__photo{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+
+    &::after {
+      content: '///';
+      position: absolute;
+      top: -2px;
+      right: -14px;
+      width: 48px;
+      height: 42px;
+      //background-color: $color-text-green;
+      background-image: linear-gradient(90deg, rgba($color-button-gradient-left, 0.7), rgba($color-button-gradient-right, 0.7));
+      background-clip: text;
+      -webkit-background-clip: text;
+      //font-family: "FontAwesome5FreeSolid";
+      font-size: 48px;
+      line-height: 42px;
+      color: $color-text-green;
+    }
+  }
+
+  &__img {
+    object-fit: none;
+    object-position: center -10px;
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: $color-text-green;
+  }
+
+  &__position {
+    margin: 0;
+    margin-bottom: 35px;
+
+    letter-spacing: 0.7px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__text {
+    margin: 0;
+    letter-spacing: 0.7px;
+    line-height: 27px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__paginator {
+    margin: 0;
+    margin-left: 2px;
+  }
+}
+
+.paginator {
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  
+  &__dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgba($color-button-gradient-left, 0.7), rgba($color-button-gradient-right, 0.7));
+
+    &--active {
+      width: 37px;
+    }
+  }
+
+  &__dot:not(:last-child) {
+    margin-right: 9px;
+  }
+}
+
+.events {
+  margin: 0;
+  padding-top: 162px;
+  padding-bottom: 180px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    margin-right: 80px;
+    //flex-basis: 50%;
+    align-self: flex-start;
+
+    background-image: linear-gradient(to bottom right, rgba($gradient-left, 1), rgba($gradient-right, 1));
+
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &__img {
+    position: relative;
+    padding: 49px 0;
+    width: 440px;
+    height: 606px;
+    left: 50px;
+  }
+
+  &__upcoming {
+    flex-basis: calc(50% - 15px);
+  }
+
+  &__author {
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.1px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.9px;
+    color: $color-text-grey;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    color: $color-text-green;
+  }
+
+  &__list {
+    margin: 0;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 57px;
+  }
+
+  &__date {
+    margin: 0;
+    margin-bottom: 4px;
+
+    letter-spacing: 0.7px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__motive {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    color: $color-text-grey;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 25px;
+
+    letter-spacing: 0.75px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__register {
+    padding: 11px 27px 13px 33px;
   }
 }

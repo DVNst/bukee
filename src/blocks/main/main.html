@@ -1,5 +1,5 @@
 <main>
-  <section class="author block">
+  <section class="author block" id="author">
     <div class="wrapper">
       <div class="author__wrapper">
         <div class="author__about">
@@ -38,7 +38,7 @@
     </div>
   </section>
 
-  <section class="contents block block--grey">
+  <section class="contents block block--grey" id="contents">
     <div class="wrapper">
       <h2 class="contents__title">Book Contents</h2>
       <p class="contents__slogan">Let's see what we have coverd in the book</p>
@@ -86,13 +86,13 @@
             <li class="contents__item">10. Labore et dolore magna</li>
           </ul>
 
-          <a href="#" class="btn contents__more">More</a>
+          <button class="btn contents__more" name="contents-more">More</button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="other-books block">
+  <section class="other-books block" id="books">
     <div class="wrapper">
       <h2 class="other-books__title">Other Books</h2>
       <p class="other-books__slogan">Some books you might be interested in</p>
@@ -100,49 +100,77 @@
       <ul class="other-books__list">
         <li class="other-books__item">
           <figure class="other-books__cover other-books-cover">
-            <img src="img/book-cover-min.svg" width="269" height="409" alt="Good book">
-            <p class="other-books-cover__title">Inception</p>
-            <p class="other-books-cover__slogan">Books are the best friends</p>
-            <p class="other-books-cover__by">- By Emma Anderson</p>
+            <img src="img/book-cover-min.svg" class="other-books-cover__img" width="269" height="409" alt="Good book">
+
+            <div class="other-books-cover__name">
+              <p class="other-books-cover__title">Inception</p>
+              <p class="other-books-cover__slogan">Books are the best friends</p>
+              <p class="other-books-cover__by">- By Emma Anderson</p>
+            </div>
           </figure>
 
           <p class="other-books__name">Inception</p>
-          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+
+          <a href="#" class="other-books__more">Read more</a>
         </li>
+
         <li class="other-books__item">
           <figure class="other-books__cover other-books-cover">
-            <img src="img/book-cover-min.svg" width="269" height="409" alt="Good book">
-            <p class="other-books-cover__title">Fight Club</p>
-            <p class="other-books-cover__slogan">Books are the best friends</p>
-            <p class="other-books-cover__by">- By Emma Anderson</p>
+            <img src="img/book-cover-min.svg" class="other-books-cover__img" width="269" height="409" alt="Good book">
+
+            <div class="other-books-cover__name">
+              <p class="other-books-cover__title">Fight Club</p>
+              <p class="other-books-cover__slogan">Books are the best friends</p>
+              <p class="other-books-cover__by">- By Emma Anderson</p>
+            </div>
           </figure>
 
           <p class="other-books__name">Fight Club</p>
-          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+
+          <a href="#" class="other-books__more">Read more</a>
         </li>
+
         <li class="other-books__item">
           <figure class="other-books__cover other-books-cover">
-            <img src="img/book-cover-min.svg" width="269" height="409" alt="Good book">
-            <p class="other-books-cover__title">Daredevils</p>
-            <p class="other-books-cover__slogan">Books are the best friends</p>
-            <p class="other-books-cover__by">- By Emma Anderson</p>
+            <img src="img/book-cover-min.svg" class="other-books-cover__img" width="269" height="409" alt="Good book">
+
+            <div class="other-books-cover__name">
+              <p class="other-books-cover__title">Daredevils</p>
+              <p class="other-books-cover__slogan">Books are the best friends</p>
+              <p class="other-books-cover__by">- By Emma Anderson</p>
+            </div>
           </figure>
 
           <p class="other-books__name">Daredevils</p>
-          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+
+          <a href="#" class="other-books__more">Read more</a>
         </li>
       </ul>
 
-      <a href="#" class="btn other-books__more">Browse all books</a>
+      <a href="#" class="btn other-books__more-all">Browse all books</a>
     </div>
   </section>
 
-  <section class="testimonial block block--dark-grey block--arrow-down">
+  <section class="testimonial block block--dark-grey block--arrow-down" id="education">
     <div class="wrapper">
-      <h2 class="testimonial__title">Testimonial</h2>
+      <h2 class="testimonial__title visually-hidden">Testimonial</h2>
 
       <ul class="testimonial__list">
         <li class="testimonial__item">
+          <div class="testimonial__photo">
+            <img class="testimonial__img" src="img/review-author-01.jpg" alt="Kate Dennings">
+          </div>
+
+          <p class="testimonial__name">Kate Dennings</p>
+          <p class="testimonial__position">Calligraphy Expert</p>
+
+          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+        </li>
+
+        <li class="testimonial__item visually-hidden">
           <div class="testimonial__img">
             <img src="img/review-author-01.jpg" alt="Kate Dennings">
           </div>
@@ -153,18 +181,7 @@
           <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </li>
 
-        <li class="testimonial__item">
-          <div class="testimonial__img">
-            <img src="img/review-author-01.jpg" alt="Kate Dennings">
-          </div>
-
-          <p class="testimonial__name">Kate Dennings</p>
-          <p class="testimonial__position">Calligraphy Expert</p>
-
-          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-        </li>
-
-        <li class="testimonial__item">
+        <li class="testimonial__item visually-hidden">
           <div class="testimonial__img">
             <img src="img/review-author-01.jpg" alt="Kate Dennings">
           </div>
@@ -186,31 +203,33 @@
 
   <section class="events block">
     <div class="wrapper">
-      <div class="events__img">
-        <img src="img/event-author.jpg" alt="Emma Anderson">
-      </div>
-
       <div class="events__wrapper">
-        <p class="events__author">- Emma Anderson</p>
+        <div class="events__photo">
+          <img src="img/event-author.jpg" class="events__img" width="440" height="606" alt="Emma Anderson">
+        </div>
 
-        <h2 class="events__title">Upcoming Events</h2>
-        <p class="events__subtitle">Some upcoming events you might be interested in</p>
+        <div class="events__upcoming">
+          <p class="events__author">- Emma Anderson</p>
 
-        <ul class="events__list">
-          <li class="events__item">
-            <p class="events__date">November 21, 2018</p>
-            <p class="events__motive">Book signing - San francisco, CA</p>
-            <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-            <a href="#" class="events__register">Register</a>
-          </li>
+          <h2 class="events__title">Upcoming Events</h2>
+          <p class="events__subtitle">Some upcoming events you might be interested in</p>
 
-          <li class="events__item">
-            <p class="events__date">November 21, 2018</p>
-            <p class="events__motive">Book reading - Los Angeles, CA</p>
-            <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-            <a href="#" class="events__register">Register</a>
-          </li>
-        </ul>
+          <ul class="events__list">
+            <li class="events__item">
+              <p class="events__date">November 21, 2018</p>
+              <p class="events__motive">Book signing - San francisco, CA</p>
+              <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              <a href="#" class="btn events__register">Register</a>
+            </li>
+
+            <li class="events__item">
+              <p class="events__date">November 21, 2018</p>
+              <p class="events__motive">Book reading - Los Angeles, CA</p>
+              <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              <a href="#" class="btn events__register">Register</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
