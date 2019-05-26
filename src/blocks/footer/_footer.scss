@@ -1,0 +1,160 @@
+.main-footer {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  color: $color-text-blue;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    flex-basis: 370px;
+    margin-right: 130px;
+  }
+
+  &__links {
+    flex-basis: 270px;
+    margin-right: 130px;
+  }
+
+  &__contacts {
+    flex-basis: 270px;
+  }
+}
+
+.copyright {
+  &__logo {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 137px;
+    height: 28px;
+  }
+
+  &__img {
+    width: 137px;
+    height: 28px;
+  }
+
+  &__text {
+    margin: 0;    
+
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text-blue;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.links {
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-text-green;
+  }
+
+  &__list {
+    margin: 0;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text-blue;
+  }
+}
+
+.contacts {
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-text-green;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text-blue;
+  }
+
+  &__tel, &__email {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text-blue;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &__social {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    color: $color-text-green;
+    background: $color-text-green;
+
+    &--facebook {
+      width: 9px;
+    }
+
+    &--twitter {
+      width: 16px;
+    }
+
+    &--twitch {
+      width: 13px;
+    }
+
+    &--youtube {
+      width: 17px;
+    }
+
+    &--slack {
+      width: 14px;
+    }
+
+    &--skype {
+      width: 13px;
+    }
+  }
+}
