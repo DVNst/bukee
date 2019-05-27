@@ -271,7 +271,6 @@
     display: inline-block;
     width: 14px;
     height: 17px;
-    background: $color-button;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -279,16 +278,19 @@
     &--stackoverflow {
       width: 14px;
       height: 17px;
+      background-image: url('../img/stack-overflow.svg');
     }
 
     &--amazone {
       width: 16px;
       height: 17px;
+      background-image: url('../img/amazon.svg');
     }
 
     &--sass {
       width: 24px;
       height: 18px;
+      background-image: url('../img/sass.svg');
     }
   }
 }
@@ -462,7 +464,7 @@
     border-radius: 50%;
 
     &::after {
-      content: '///';
+      content: url('../img/quotation-right-mark.svg');
       position: absolute;
       top: -2px;
       right: -14px;
@@ -470,6 +472,9 @@
       height: 42px;
       //background-color: $color-text-green;
       background-image: linear-gradient(90deg, rgba($color-button-gradient-left, 0.7), rgba($color-button-gradient-right, 0.7));
+      //background-repeat: no-repeat;
+      //background-size: cover;
+      //object-fit: cover;
       background-clip: text;
       -webkit-background-clip: text;
       //font-family: "FontAwesome5FreeSolid";
@@ -652,33 +657,35 @@
 
 .blog {
   margin: 0;
-  padding-top: 160px;
+  padding-top: 155px;
   padding-bottom: 160px;
 
   text-align: center;
 
   &__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     font-size: 48px;
     line-height: 48px;
     font-weight: 700;
+    letter-spacing: 2px;
     color: $color-text-grey;
   }
 
   &__subtitle {
     margin: 0;
-    margin-bottom: 85px;
+    margin-bottom: 88px;
 
     font-size: 18px;
     line-height: 18px;
+    letter-spacing: 0.9px;
     color: $color-text-green;
   }
 
   &__list {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     display: flex;
     flex-wrap: wrap;
 
@@ -694,13 +701,17 @@
   &__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
+
+  &__more {
+    padding: 12px 30px;
+  }
 }
 
 .post {
   text-align: left;
 
   &__img {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     width: 369px;
     height: 224px;
   }
@@ -713,17 +724,19 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 
     font-size: 18px;
     line-height: 18px;
+    letter-spacing: 0.9px;
     color: $color-text-grey;
   }
 
   &__data {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 
+    letter-spacing: 0.7px;
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -743,13 +756,14 @@
 
   &__text {
     margin: 0;
+    letter-spacing: 0.6px;
   }
 }
 
 .subscribe {
   margin: 0;
-  margin-top: 160px;
-  margin-bottom: 160px;
+  margin-top: 156px;
+  margin-bottom: 155px;
 
   &__wrapper {
     display: flex;
@@ -765,21 +779,25 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 1px;
+    margin-bottom: 12px;
 
     font-size: 48px;
     line-height: 48px;
     font-weight: 700;
+    letter-spacing: 2px;
     color: $color-text-grey;
   }
 
   &__text {
+    margin: 0;
+
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.75px;
   }
 
   &__form {
     margin: 0;
+    padding-top: 6px;
     display: flex;
     flex-basis: calc((100% - 30px) / 2);
     flex-direction: column;
@@ -789,8 +807,9 @@
     margin-bottom: 20px;
   }
 
-  &__btn {
+  &__join {
     margin-bottom: 20px;
+    padding: 14px 25px;
   }
 }
 
@@ -803,6 +822,7 @@
     color: $color-text-white;
     background-color: $gb-dark-grey;
 
+    letter-spacing: 0.75px;
     font-family: 'Open Sans', sans-serif;
 
     &::placeholder {
