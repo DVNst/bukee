@@ -253,45 +253,22 @@
 
   &__list {
     margin: 0;
-    display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
     
-    line-height: 0;
+    list-style-type: none;    
   }
 
   &__item {
     margin: 0;
-    margin-right: 15px;
+    margin-right: 13px;
+    display: inline-block;
+
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
   }
 
   &__link {
-    display: inline-block;
-    width: 14px;
-    height: 17px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &--stackoverflow {
-      width: 14px;
-      height: 17px;
-      background-image: url('../img/stack-overflow.svg');
-    }
-
-    &--amazone {
-      width: 16px;
-      height: 17px;
-      background-image: url('../img/amazon.svg');
-    }
-
-    &--sass {
-      width: 24px;
-      height: 18px;
-      background-image: url('../img/sass.svg');
-    }
+    color: $color-text-green;
   }
 }
 
