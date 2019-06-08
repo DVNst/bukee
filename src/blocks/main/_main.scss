@@ -687,10 +687,28 @@
 .post {
   text-align: left;
 
-  &__img {
-    margin-bottom: 13px;
+  &:hover &__img {
+    transform: translate(-50%, -50%) scale(1.1, 1.1);
+  }
+
+  &__wrapper-img {
+    position: relative;
+    display: block;
     width: 369px;
     height: 224px;
+    margin-bottom: 13px;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    width: 369px;
+    height: 224px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    object-fit: cover;
   }
 
   &__link {
