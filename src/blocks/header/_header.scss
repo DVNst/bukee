@@ -50,12 +50,13 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 26px;
+    margin-right: 18.5px;
   }
 
   &__link {
     color: $color-text-white;
     text-decoration: none;
+    letter-spacing: 1px;
   }
 }
 
