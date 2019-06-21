@@ -12,7 +12,12 @@
   });
 
   $("#contentsMore").click(function() {
-    $("#contentsList").slideDown("fast");
+    $("#contentsList").slideDown('fast');
     $("#contentsMore").hide();
+  });
+
+  $("#main-nav-btn").click(function() {
+    $("#main-nav").toggle();
+    $("#main-nav-btn").toggleClass("main-nav__btn--close");
   });
 </script>

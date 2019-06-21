@@ -52,7 +52,7 @@
     justify-content: space-between;
     margin-bottom: 145px;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-bottom: 50px;
       padding-right: 30px;
       padding-left: 30px;
@@ -68,7 +68,7 @@
     padding-top: 15px;
     letter-spacing: 1.7px;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-right: 0;
       margin-bottom: 50px;
       padding-top: 0;
@@ -124,7 +124,7 @@
     background-image: linear-gradient(to bottom right, rgba($gradient-left, 1), rgba($gradient-right, 1));
     line-height: 0;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-bottom: 50px;
     }
   }
@@ -145,7 +145,7 @@
     list-style-type: none;
     text-align: center;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin: 0 30px;
     }
   }
@@ -404,7 +404,7 @@
 
     text-align: center;
     
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin: 0 auto 50px;
       flex-direction: column;
       justify-content: center;
@@ -420,7 +420,7 @@
   &__item:not(:last-child) {
     margin-right: 30px;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-right: 0;
       margin-bottom: 70px;
     }
@@ -624,7 +624,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-bottom: 50px;
       padding-right: 30px;
       padding-left: 30px;
@@ -659,7 +659,7 @@
     margin-left: 80px;
     flex-basis: calc(50% - 15px);
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-left: 0;
       margin-bottom: 50px;
     }
@@ -786,7 +786,7 @@
 
     list-style-type: none;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin: 0 auto;
       padding-right: 30px;
       padding-left: 30px;
@@ -803,7 +803,7 @@
     flex-basis: calc((100% - 60px) / 3);
     width: calc((100% - 60px) / 3);
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin: 0;
       margin-bottom: 50px;
       width: 100%;
@@ -813,7 +813,7 @@
   &__item:not(:nth-child(3n)) {
     margin-right: 30px;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-right: 0;
     }
   }
@@ -850,7 +850,7 @@
     transition: 0.3s;
     object-fit: cover;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       width: 100%;
       top: 50%;
     }
@@ -897,7 +897,7 @@
       display: block;
     }
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       display: inline;
     }
   }
@@ -921,7 +921,7 @@
   &__wrapper {
     display: flex;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       padding-right: 30px;
       padding-left: 30px;
       flex-direction: column;
@@ -937,7 +937,7 @@
 
     text-align: left;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin: 0 auto 50px;
       text-align: center;
     }
@@ -953,7 +953,7 @@
     letter-spacing: 2px;
     color: $color-text-grey;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-bottom: 50px;
     }
   }
@@ -973,7 +973,7 @@
     flex-basis: calc((100% - 30px) / 2);
     flex-direction: column;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       padding-top: 0;
       margin: 0 auto;
       flex-basis: auto;
@@ -989,7 +989,7 @@
     margin-bottom: 20px;
     padding: 14px 25px;
 
-    @media (max-width: 990px) {
+    @media (max-width: $tablet-l) {
       margin-bottom: 0;
     }
   }
