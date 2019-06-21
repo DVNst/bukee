@@ -123,6 +123,10 @@
     
     background-image: linear-gradient(to bottom right, rgba($gradient-left, 1), rgba($gradient-right, 1));
     line-height: 0;
+
+    @media (max-width: 990px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__img {
@@ -743,6 +747,11 @@
 
   text-align: center;
 
+  @media (max-width: $laptop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 15px;
@@ -762,6 +771,10 @@
     line-height: 18px;
     letter-spacing: 0.9px;
     color: $color-text-green;
+
+    @media (max-width: $laptop) {
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -772,6 +785,16 @@
     justify-content: center;
 
     list-style-type: none;
+
+    @media (max-width: 990px) {
+      margin: 0 auto;
+      padding-right: 30px;
+      padding-left: 30px;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      width: 50%;
+    }
   }
 
   &__item {
@@ -779,10 +802,20 @@
     margin-bottom: 50px;
     flex-basis: calc((100% - 60px) / 3);
     width: calc((100% - 60px) / 3);
+
+    @media (max-width: 990px) {
+      margin: 0;
+      margin-bottom: 50px;
+      width: 100%;
+    }
   }
 
   &__item:not(:nth-child(3n)) {
     margin-right: 30px;
+
+    @media (max-width: 990px) {
+      margin-right: 0;
+    }
   }
 
   &__more {
@@ -816,6 +849,11 @@
     transform: translate(-50%, -50%);
     transition: 0.3s;
     object-fit: cover;
+
+    @media (max-width: 990px) {
+      width: 100%;
+      top: 50%;
+    }
   }
 
   &__link {
@@ -857,6 +895,10 @@
 
     @media (max-width: $laptop) {
       display: block;
+    }
+
+    @media (max-width: 990px) {
+      display: inline;
     }
   }
 
