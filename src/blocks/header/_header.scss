@@ -20,10 +20,22 @@
   padding-bottom: 2px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 16px;
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+  }
+
+  &__logo {
+    @media (max-width: $laptop) {
+      margin-bottom: 15px;
+      padding: 0 15px;
+    }
+  }
 
   &__list {
     display: flex;
@@ -61,25 +73,47 @@
   padding-top: 177px;
   padding-bottom: 162px;
 
+  @media (max-width: $laptop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 990px) {
+    flex-direction: column-reverse;
+    align-content: center;
+    text-align: center;
+  }
+
   &__cover {
     margin: 0;
     margin-right: 55px;
-    min-width: 445px;
-    height: 639px;
+    //min-width: 445px;
+    width: 38.03%;
+    //height: 639px;
+
+    @media (max-width: 990px) {
+      margin: 0 auto;
+    }
   }
 
   &__desc {
     margin-right: 100px;
+
+    @media (max-width: $laptop) {
+      margin-right: 0;
+    }
   }
 }
 
 .new-book-cover {
   position: relative;
   line-height: 0;
+  flex-shrink: 0;
 
   &__img {
-    width: 445px;
-    height: 639px;
+    //width: 445px;
+    width: 100%;
+    //height: 639px;
   }
 
   &__name {
@@ -95,7 +129,11 @@
 
     font-size: 14px;
     line-height: 24px;
-    text-align: center;    
+    text-align: center;
+
+    @media (max-width: 990px) {
+      padding: 60px 20px 30px 55px;
+    }
   }
 
   &__title {
@@ -130,12 +168,22 @@
   display: flex;  
   flex-direction: column;
 
+  @media (max-width: 990px) {
+    margin-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   &__title {
     margin-bottom: 11px;
     font-size: 48px;
     line-height: 1.15;
     letter-spacing: 1.9px;
     text-transform: uppercase;
+
+    @media (max-width: 1120px) {
+      font-size: 37px;
+    }
   }
 
   &__slogan {
@@ -153,6 +201,7 @@
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.6px;
+    text-align: left;
   }
 
   &__by {
@@ -167,6 +216,10 @@
     margin-top: 24px;
     margin-right: auto;
     margin-bottom: 18px;
+
+    @media (max-width: 990px) {
+      margin: 0 auto;
+    }
   }
 
   &__note {
