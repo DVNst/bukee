@@ -9,6 +9,11 @@
     padding-bottom: 100px;
   }
 
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -17,6 +22,18 @@
       padding-right: 30px;
       padding-left: 30px;
       flex-wrap: wrap;
+    }
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    @media (max-width: 600px) {
+      margin: 0 auto;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-content: center;
     }
   }
 
@@ -53,6 +70,11 @@
 
     @media (max-width: ($tablet-l - 130px)) {
       margin-right: 0;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $tablet) {
+      flex-basis: auto;
     }
   }
 
@@ -60,6 +82,10 @@
     flex-basis: 270px;
 
     @media (max-width: ($tablet-l - 130px)) {
+    }
+
+    @media (max-width: $tablet) {
+      flex-basis: auto;
     }
   }
 }
@@ -71,6 +97,10 @@
     margin-bottom: 25px;
     width: 137px;
     height: 28px;
+
+    @media (max-width: $tablet) {
+      margin: 0 auto 10px;
+    }
   }
 
   &__img {
@@ -96,7 +126,6 @@
 
   @media (max-width: ($tablet-l - 130px)) {
     padding-top: 0;
-    margin-bottom: 50px;
   }
 
   &__title {
@@ -109,6 +138,11 @@
     text-transform: uppercase;
     letter-spacing: 0.8px;
     color: $color-text-green;
+
+    @media (max-width: $tablet) {
+      margin: 0 auto 20px;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -116,6 +150,11 @@
 
     list-style-type: none;
     letter-spacing: 0.6px;
+
+    @media (max-width: $tablet) {
+      display: table;
+      margin: 0 auto;
+    }
   }
 
   &__item {
@@ -151,6 +190,11 @@
     text-transform: uppercase;
     letter-spacing: 0.8px;
     color: $color-text-green;
+
+    @media (max-width: $tablet) {
+      margin: 0 auto 20px;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -159,6 +203,10 @@
     letter-spacing: 0.6px;
     font-family: 'Open Sans', sans-serif;
     color: $color-text-blue;
+
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
   }
 
   &__tel, &__email {
@@ -173,6 +221,11 @@
     margin-left: -2px;
 
     list-style-type: none;
+
+    @media (max-width: $tablet) {
+      display: table;
+      margin: 0 auto;
+    }
   }
 
   &__item {
