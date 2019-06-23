@@ -978,6 +978,11 @@
     padding-bottom: 100px;
   }
 
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 15px;
@@ -987,6 +992,12 @@
     font-weight: 700;
     letter-spacing: 2px;
     color: $color-text-grey;
+
+    @media (max-width: $tablet) {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
@@ -1000,6 +1011,12 @@
 
     @media (max-width: $laptop) {
       margin-bottom: 50px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 40px;
     }
   }
 
@@ -1020,6 +1037,16 @@
       align-content: center;
       text-align: center;
       width: 50%;
+    }
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+      padding-left: 0;
+      width: 70%;
+    }
+
+    @media (max-width: 570px) {
+      width: 100%;
     }
   }
 
@@ -1046,6 +1073,10 @@
 
   &__more {
     padding: 12px 30px;
+
+    @media (max-width: $tablet) {
+      padding: 12px 28px;
+    }
   }
 }
 
