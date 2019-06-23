@@ -1,23 +1,41 @@
-<script src="./js/main.js" defer></script>
-<script src="https://kit.fontawesome.com/a7c80760d5.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src='./js/main.js' defer></script>
+<script src='https://kit.fontawesome.com/a7c80760d5.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 <script>
   $(document).ready(function() {
+    $('#contentsMore').click(function() {
+      $('#contentsList').slideDown('fast');
+      $('#contentsMore').hide();
+    });
+
     $('.carousel').slick({
       arrows: false,
       dots: true,
       infinite: true,
     });
-  });
 
-  $("#contentsMore").click(function() {
-    $("#contentsList").slideDown('fast');
-    $("#contentsMore").hide();
-  });
+    if($(window).width() <= 768) {
+      $('#main-nav-btn').removeClass('main-nav__btn--close');
+      $('#main-nav').addClass('main-nav__list--hidden');
+    } else {
+      $('#main-nav').removeClass('main-nav__list--hidden');
+    }
 
-  $("#main-nav-btn").click(function() {
-    $("#main-nav").toggle();
-    $("#main-nav-btn").toggleClass("main-nav__btn--close");
+    $(window).resize(function() {
+      if($(window).width() <= 768) {
+        $('#main-nav-btn').removeClass('main-nav__btn--close');
+        $('#main-nav').addClass('main-nav__list--hidden');
+      } else {
+        $('#main-nav').removeClass('main-nav__list--hidden');
+      }
+    });
+
+    $('#main-nav-btn').removeClass('no-js');
+
+    $('#main-nav-btn').click(function() {
+      $('#main-nav-btn').toggleClass('main-nav__btn--close');
+      $('#main-nav').toggleClass('main-nav__list--hidden');
+    });
   });
 </script>

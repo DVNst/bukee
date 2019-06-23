@@ -72,3 +72,7 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 	color: $color-text-white;
 }
+
+.no-js {
+	display: none;
+}
