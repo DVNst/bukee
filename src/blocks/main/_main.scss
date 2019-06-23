@@ -14,6 +14,11 @@
     margin-top: 60px;
     margin-bottom: 60px;
 
+    @media (max-width: $tablet) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
     &::before, &::after{
       content: '';
       position: absolute;
@@ -24,16 +29,28 @@
       border-width: 50vw;
       border-top-width: 60px;
       border-bottom-width: 0;
+
+      @media (max-width: $tablet) {
+        border-top-width: 30px;
+      }
     }
 
     &::before {
       top: -60px;
       border-color: transparent $gb-dark-grey;
+
+      @media (max-width: $tablet) {
+        top: -30px;
+      }
     }
 
     &::after {
       bottom: -60px;
       border-color: $gb-dark-grey transparent transparent;
+
+      @media (max-width: $tablet) {
+        bottom: -30px;
+      }
     }
   }
 }
@@ -667,13 +684,18 @@
 }
 
 .testimonial {
-  padding-top: 165px;
+  padding-top: 163px;
   padding-bottom: 110px;
   color: $color-text-blue;
 
   @media (max-width: $laptop) {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   &__list {
@@ -686,6 +708,10 @@
     @media (max-width: $laptop) {
       margin: 0 90px;
     }
+
+    @media (max-width: $tablet) {
+      margin: 0;
+    }
   }
 
   &__item {
@@ -693,29 +719,29 @@
     width: 100%;
   }
 
-  &__photo{
+  &__photo {
     position: relative;
     margin: 0 auto;
     margin-bottom: 25px;
+    padding-top: 2px;
     width: 152px;
     height: 152px;
     border-radius: 50%;
 
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+
     &::after {
       content: url('../img/quotation-right-mark.svg');
       position: absolute;
-      top: -2px;
+      top: 0;
       right: -14px;
       width: 48px;
       height: 42px;
-      //background-color: $color-text-green;
       background-image: linear-gradient(90deg, rgba($color-button-gradient-left, 0.7), rgba($color-button-gradient-right, 0.7));
-      //background-repeat: no-repeat;
-      //background-size: cover;
-      //object-fit: cover;
       background-clip: text;
       -webkit-background-clip: text;
-      //font-family: "FontAwesome5FreeSolid";
       font-size: 48px;
       line-height: 42px;
       color: $color-text-green;
@@ -738,6 +764,11 @@
     font-weight: 700;
     letter-spacing: 1.2px;
     color: $color-text-green;
+
+    @media (max-width: $tablet) {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 
   &__position {
@@ -746,6 +777,10 @@
 
     letter-spacing: 0.7px;
     font-family: 'Open Sans', sans-serif;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
@@ -1166,6 +1201,11 @@
 
   text-align: center;
   list-style: none;
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
 
   & li {
     display: inline-block;
