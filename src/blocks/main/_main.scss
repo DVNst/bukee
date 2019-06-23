@@ -796,9 +796,14 @@
   padding-top: 162px;
   padding-bottom: 180px;
 
-  @media (max-width: $laptop  ) {
+  @media (max-width: $laptop) {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   &__wrapper {
@@ -806,18 +811,21 @@
     justify-content: space-between;
 
     @media (max-width: $tablet-l) {
-      margin-bottom: 50px;
       padding-right: 30px;
       padding-left: 30px;
       flex-direction: column-reverse;
       align-content: center;
       text-align: center;
     }
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   &__photo {
     margin: 0 auto;
-    //flex-basis: 50%;
     align-self: flex-start;
 
     background-image: linear-gradient(to bottom right, rgba($gradient-left, 1), rgba($gradient-right, 1));
@@ -825,7 +833,12 @@
     font-size: 0;
     line-height: 0;
 
-    
+    @media (max-width: $tablet) {
+      position: relative;
+      padding-top: 24px;
+      padding-bottom: 22px;
+      left: -11px;
+    }
   }
 
   &__img {
@@ -834,6 +847,13 @@
     width: 440px;
     height: 606px;
     left: 50px;
+
+    @media (max-width: $tablet) {
+      padding: 0;
+      width: 100%;
+      height: auto;
+      left: 22px;
+    }
   }
 
   &__upcoming {
@@ -854,6 +874,12 @@
     line-height: 18px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.1px;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -863,6 +889,12 @@
     font-weight: 700;
     letter-spacing: 1.9px;
     color: $color-text-grey;
+
+    @media (max-width: $tablet) {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
@@ -872,6 +904,11 @@
     font-size: 18px;
     letter-spacing: 0.9px;
     color: $color-text-green;
+
+    @media (max-width: $tablet) {
+      font-size: 15px;
+      line-height: 15px;
+    }
   }
 
   &__list {
@@ -886,6 +923,10 @@
 
   &__item:not(:last-child) {
     margin-bottom: 57px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__date {
@@ -894,6 +935,10 @@
 
     letter-spacing: 0.7px;
     font-family: 'Open Sans', sans-serif;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 0;
+    }
   }
 
   &__motive {
