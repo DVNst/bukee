@@ -239,6 +239,11 @@
     padding-bottom: 100px;
   }
 
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 12px;
@@ -248,6 +253,11 @@
     letter-spacing: 2px;
     text-align: center;
     color: $color-text-grey;
+
+    @media (max-width: $tablet) {
+      font-size: 25px;
+      line-height: 25px;
+    }
   }
 
   &__slogan {
@@ -258,6 +268,12 @@
     letter-spacing: 1.2px;
     text-align: center;
     color: $color-text-green;
+
+    @media (max-width: $tablet) {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 40px;
+    }
   }
 
   &__wrapper {
@@ -271,6 +287,11 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
+    }
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -293,6 +314,12 @@
     line-height: 24px;
     letter-spacing: 1.2px;
     color: $color-text-grey;
+
+    @media (max-width: $tablet) {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
   }
 
   &__text {
@@ -301,6 +328,17 @@
 
     letter-spacing: 0.6px;
     text-align: left;
+  }
+
+  &__wrap {
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 630px) {
+      margin: 0 auto;
+      padding: 0;
+      display: table;
+    }
   }
 
   &__list {
@@ -319,11 +357,20 @@
     list-style-type: none;
     text-align: left;
 
+    @media (max-width: 630px) {
+      column-count: 1;
+      column-gap: 0;
+    }
+
     &--more {
       display: none;
       position: relative;
 
       counter-reset: list 10;
+
+      @media (max-width: 630px) {
+        margin-bottom: 0;
+      }
 
       &::before {
         content: '';
@@ -343,6 +390,10 @@
     padding-left: 34px;
     margin-bottom: 8px;
     margin-right: 2px;
+
+    @media (max-width: 630px) {
+      margin-right: 0;
+    }
 
     &::before {
       counter-increment: list;
@@ -371,9 +422,13 @@
     width: 570px;
 
     @media (max-width: $laptop) {
-      flex-basis: auto;
-      width: 570px;
+      //flex-basis: auto;
+      //width: 570px;
       margin: 0 auto;
+    }
+
+    @media (max-width: 630px) {
+      width: 100%;
     }
   }
 
