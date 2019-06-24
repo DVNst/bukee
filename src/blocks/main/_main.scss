@@ -106,7 +106,7 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-size: 16px;
     font-weight: normal;
 
@@ -117,7 +117,7 @@
 
   &__name {
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 
     font-size: 48px;
     line-height: 48px;
@@ -154,7 +154,7 @@
   }
 
   &__more {
-    margin-top: 24px;
+    margin-top: 22px;
     padding-right: 28px;
     padding-left: 28px;
 
@@ -164,7 +164,8 @@
   }
 
   &__photo {
-    margin: 0 auto;
+    margin: 0;
+    margin-left: auto;
     padding-top: 48px;
     padding-bottom: 44px;
     
@@ -172,7 +173,7 @@
     line-height: 0;
 
     @media (max-width: $tablet-l) {
-      margin-bottom: 50px;
+      margin: 0 auto 50px;
     }
 
     @media (max-width: $tablet) {
@@ -325,7 +326,7 @@
 
   &__subtitle {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     font-size: 24px;
     line-height: 24px;
@@ -341,10 +342,14 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     letter-spacing: 0.6px;
     text-align: left;
+  }
+
+  &__featured {
+    margin-left: 2px;
   }
 
   &__wrap {
@@ -360,7 +365,7 @@
 
   &__list {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     padding: 0;
     padding-top: 5px;
 
@@ -393,7 +398,7 @@
         content: '';
         display: block;
         position: absolute;
-        top: -14px;
+        top: -13px;
         width: 25%;
         height: 1px;
         background: $bg-blue;
@@ -460,7 +465,7 @@
 
   &__title {
     margin: 0;
-    margin-right: 23px;
+    margin-right: 21px;
 
     font-size: 18px;
     line-height: 24px;
@@ -640,7 +645,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 70px 20px 33px 54px;
+    padding: 71px 20px 33px 54px;
     box-sizing: border-box;
     top: 0;
     left: 0;
@@ -825,13 +830,18 @@
   }
 
   &__photo {
-    margin: 0 auto;
+    margin: 0;
+    margin-right: auto;
     align-self: flex-start;
 
     background-image: linear-gradient(to bottom right, rgba($gradient-left, 1), rgba($gradient-right, 1));
 
     font-size: 0;
     line-height: 0;
+
+    @media (max-width: $tablet-l) {
+      margin: 0 auto;
+    }
 
     @media (max-width: $tablet) {
       position: relative;
@@ -1093,7 +1103,7 @@
     //width: 369px;
     width: 100%;
     height: 224px;
-    margin-bottom: 13px;
+    margin-bottom: 18px;
     overflow: hidden;
   }
 
@@ -1298,7 +1308,7 @@
 
 .slick-dots {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 36px;
   margin-left: 2px;
 
   text-align: center;
