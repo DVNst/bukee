@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>gulp-scss-starter</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header class="main-header">
+		  <div class="wrapper">
+		    <nav class="main-nav">
+		      <div class="main-nav__wrap">
+		        <a href="#" class="main-nav__logo logo">
+		          <img src="img/logo.svg" class="logo__img" width="137" height="28" alt="Bukee logo">
+		        </a>
+		
+		        <button class="btn main-nav__btn no-js" id="main-nav-btn"><span class="visually-hidden">Menu</span></button>
+		      </div>
+		
+		      <ul class="main-nav__list" id="main-nav">
+		        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Home</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#author">About</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#contents">Contents</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#books">Books</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#education">Education</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#">Skills</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#">Portfolio</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#">Clients</a></li>
+		        <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+		      </ul>
+		    </nav>
+		
+		    <section class="new-book">
+		      <figure class="new-book__cover new-book-cover">
+		        <img src="img/book-cover.svg" class="new-book-cover__img" width="445" height="639" alt="Good book">
+		
+		        <div class="new-book-cover__name">
+		          <p class="new-book-cover__title">Good book</p>
+		          <p class="new-book-cover__slogan">Don’t judge a book by its cover</p>
+		          <span class="new-book-cover__by">- By Emma Anderson</span>
+		        </div>
+		      </figure>
+		
+		      <div class="new-book__desc new-book-desc">
+		        <h1 class="new-book-desc__title">Bukee: the book</h1>
+		        <p class="new-book-desc__slogan">A room without books is like a body without a soul</p>
+		
+		        <p class="new-book-desc__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		        <p class="new-book-desc__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut</p>
+		
+		        <span class="new-book-desc__by">- By Emma Anderson</span>
+		
+		        <a href="#" class="btn new-book-desc__buy">Buy this book - $15.00</a>
+		        <small class="new-book-desc__note">* Some conditions may applicable</small>
+		      </div>
+		    </section>
+		  </div>
+		</header>
+		<main>
+		  <section class="author block" id="author">
+		    <div class="wrapper">
+		      <div class="author__wrapper">
+		        <div class="author__about">
+		          <h2 class="author__title">- Book Author</h2>
+		          <p class="author__name">Emma Anderson</p>
+		          <p class="author__slogan">A room without books is like a body without a soul</p>
+		          
+		          
+		          <p class="author__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		          <p class="author__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut</p>
+		
+		          <a href="#" class="btn author__more">Read full biography</a>
+		        </div>
+		
+		        <div class="author__photo">
+		          <img class="author__img" src="img/author.jpg" width="438" height="466" alt="Emma Anderson">
+		        </div>
+		      </div>
+		
+		      <div class="author__feature feature">
+		        <ul class="feature__list">
+		          <li class="feature__item">
+		            <p class="feature__mark">12</p>
+		            <p class="feature__desc">Total published books</p>
+		          </li>
+		          <li class="feature__item">
+		            <p class="feature__mark">5</p>
+		            <p class="feature__desc">Happy readers</p>
+		          </li>
+		          <li class="feature__item">
+		            <p class="feature__mark">15, 000</p>
+		            <p class="feature__desc">Happy readers</p>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </section>
+		
+		  <section class="contents block block--grey" id="contents">
+		    <div class="wrapper">
+		      <h2 class="contents__title">Book Contents</h2>
+		      <p class="contents__slogan">Let's see what we have coverd in the book</p>
+		
+		      <div class="contents__wrapper">
+		        <div class="contents__about">
+		          <h3 class="contents__subtitle">About the book</h3>
+		          <p class="contents__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
+		
+		          <div class="contents__featured featured">
+		            <h4 class="featured__title">Featured in:</h4>
+		            <ul class="featured__list">
+		              <li class="featured__item">
+		                <a href="#" class="featured__link">
+		                  <i class="fab fa-stack-overflow"><span class="visually-hidden">Stack overflow</span></i>
+		                </a>
+		              </li>
+		              <li class="featured__item">
+		                <a href="#" class="featured__link">
+		                    <i class="fab fa-amazon"><span class="visually-hidden">Amazone</span></i>
+		                </a>
+		              </li>
+		              <li class="featured__item">
+		                <a href="#" class="featured__link">
+		                  <i class="fab fa-sass"><span class="visually-hidden">Sass</span></i>
+		                </a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+		
+		        <div class="contents__table">
+		          <h3 class="contents__subtitle">Table of contents</h3>
+		
+		          <ol class="contents__wrap">
+		            <ol class="contents__list">
+		              <li class="contents__item">Lorem ipsum dolor sit amet</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		              <li class="contents__item">Lorem ipsum dolor sit amet</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		            </ol>
+		
+		            <ol class="contents__list contents__list--more" id="contentsList">
+		              <li class="contents__item">Lorem ipsum dolor sit</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		              <li class="contents__item">Lorem ipsum dolor sit</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		              <li class="contents__item">Consectetur adipisicing elit</li>
+		              <li class="contents__item">Labore et dolore magna</li>
+		            </ol>
+		          </ol>
+		
+		          <button class="btn contents__btn-more" id="contentsMore">More</button>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		
+		  <section class="other-books block" id="books">
+		    <div class="wrapper">
+		      <h2 class="other-books__title">Other Books</h2>
+		      <p class="other-books__slogan">Some books you might be interested in</p>
+		
+		      <ul class="other-books__list">
+		        <li class="other-books__item">
+		          <figure class="other-books__cover other-books-cover">
+		            <img src="img/book-cover-min.svg" class="other-books-cover__img" width="269" height="409" alt="Good book">
+		
+		            <div class="other-books-cover__name">
+		              <p class="other-books-cover__title">Inception</p>
+		              <p class="other-books-cover__slogan">Books are the best friends</p>
+		              <p class="other-books-cover__by">- By Emma Anderson</p>
+		            </div>
+		          </figure>
+		
+		          <p class="other-books__name">Inception</p>
+		          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+		
+		          <a href="#" class="other-books__more">Read more</a>
+		        </li>
+		
+		        <li class="other-books__item">
+		          <figure class="other-books__cover other-books-cover">
+		            <img src="img/book-cover-min.svg" class="other-books-cover__img" width="269" height="409" alt="Good book">
+		
+		            <div class="other-books-cover__name">
+		              <p class="other-books-cover__title">Fight Club</p>
+		              <p class="other-books-cover__slogan">Books are the best friends</p>
+		              <p class="other-books-cover__by">- By Emma Anderson</p>
+		            </div>
+		          </figure>
+		
+		          <p class="other-books__name">Fight Club</p>
+		          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+		
+		          <a href="#" class="other-books__more">Read more</a>
+		        </li>
+		
+		        <li class="other-books__item">
+		          <figure class="other-books__cover other-books-cover">
+		            <img src="img/book-cover-min.svg" class="other-books-cover__img" width="269" height="409" alt="Good book">
+		
+		            <div class="other-books-cover__name">
+		              <p class="other-books-cover__title">Daredevils</p>
+		              <p class="other-books-cover__slogan">Books are the best friends</p>
+		              <p class="other-books-cover__by">- By Emma Anderson</p>
+		            </div>
+		          </figure>
+		
+		          <p class="other-books__name">Daredevils</p>
+		          <p class="other-books__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+		
+		          <a href="#" class="other-books__more">Read more</a>
+		        </li>
+		      </ul>
+		
+		      <a href="#" class="btn other-books__more-all">Browse all books</a>
+		    </div>
+		  </section>
+		
+		  <section class="testimonial block block--dark-grey block--arrow-down" id="education">
+		    <div class="wrapper">
+		      <h2 class="testimonial__title visually-hidden">Testimonial</h2>
+		
+		      <ul class="testimonial__list carousel">
+		        <li class="testimonial__item carousel__item">
+		          <div class="testimonial__photo">
+		            <img class="testimonial__img" src="img/review-author-01.jpg" alt="Kate Dennings">
+		          </div>
+		
+		          <p class="testimonial__name">Kate Dennings</p>
+		          <p class="testimonial__position">Calligraphy Expert</p>
+		
+		          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+		        </li>
+		
+		        <li class="testimonial__item carousel__item">
+		          <div class="testimonial__photo">
+		            <img class="testimonial__img" src="img/review-author-01.jpg" alt="Kate Dennings">
+		          </div>
+		
+		          <p class="testimonial__name">Kate Dennings</p>
+		          <p class="testimonial__position">Calligraphy Expert</p>
+		
+		          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+		        </li>
+		
+		        <li class="testimonial__item carousel__item">
+		          <div class="testimonial__photo">
+		            <img class="testimonial__img" src="img/review-author-01.jpg" alt="Kate Dennings">
+		          </div>
+		
+		          <p class="testimonial__name">Kate Dennings</p>
+		          <p class="testimonial__position">Calligraphy Expert</p>
+		
+		          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+		        </li>
+		      </ul>
+		    </div>
+		  </section>
+		
+		  <section class="events block">
+		    <div class="wrapper">
+		      <div class="events__wrapper">
+		        <div class="events__photo">
+		          <img src="img/event-author.jpg" class="events__img" width="440" height="606" alt="Emma Anderson">
+		        </div>
+		
+		        <div class="events__upcoming">
+		          <p class="events__author">- Emma Anderson</p>
+		
+		          <h2 class="events__title">Upcoming Events</h2>
+		          <p class="events__subtitle">Some upcoming events you might be interested in</p>
+		
+		          <ul class="events__list">
+		            <li class="events__item">
+		              <p class="events__date">November 21, 2018</p>
+		              <p class="events__motive">Book signing - San francisco, CA</p>
+		              <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+		              <a href="#" class="btn events__register">Register</a>
+		            </li>
+		
+		            <li class="events__item">
+		              <p class="events__date">November 21, 2018</p>
+		              <p class="events__motive">Book reading - Los Angeles, CA</p>
+		              <p class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+		              <a href="#" class="btn events__register">Register</a>
+		            </li>
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		
+		  <section class="blog block block--grey" id="blog">
+		    <div class="wrapper">
+		      <h2 class="blog__title">Latest from Blog</h2>
+		      <p class="blog__subtitle">Some of the latest posts from my personal blog</p>
+		
+		      <ul class="blog__list">
+		        <li class="blog__item post">
+		          <a href="#blog" class="post__link post__wrapper-img">
+		            <img class="post__img" src="img/blog-01.jpg" alt="post01">
+		          </a>
+		
+		          <h3 class="post__title">
+		            <a href="#blog" class="post__link">Importance of light in photography</a>
+		          </h3>
+		
+		          <p class="post__data">By <a href="#" class="post__author">Emma Anderson</a> - <a href="#" class="post__date">June 20, 2018</a></p>
+		
+		          <p class="post__text">
+		            <a href="#blog" class="post__link">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</a>
+		          </p>
+		        </li>
+		
+		        <li class="blog__item post">
+		          <a href="#blog" class="post__link post__wrapper-img">
+		            <img class="post__img" src="img/blog-02.jpg" alt="post01">
+		          </a>
+		
+		          <h3 class="post__title">
+		            <a href="#blog" class="post__link">The tools you need for the perfection</a>
+		          </h3>
+		
+		          <p class="post__data">By <a href="#" class="post__author">Emma Anderson</a> - <a href="#" class="post__date">June 25, 2018</a></p>
+		
+		          <p class="post__text">
+		            <a href="#blog" class="post__link">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</a>
+		          </p>
+		        </li>
+		
+		        <li class="blog__item post">
+		          <a href="#blog" class="post__link post__wrapper-img">
+		            <img class="post__img" src="img/blog-03.jpg" alt="post03">
+		          </a>
+		
+		          <h3 class="post__title">
+		            <a href="#blog" class="post__link">Knowing the difference is important</a>
+		          </h3>
+		
+		          <p class="post__data">By <a href="#" class="post__author">Emma Anderson</a> - <a href="#" class="post__date">August 22, 2018</a></p>
+		
+		          <p class="post__text">
+		            <a href="#blog" class="post__link">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</a>
+		          </p>
+		        </li>
+		      </ul>
+		
+		      <a href="#" class="btn blog__more">Read more in the blog</a>
+		    </div>
+		  </section>
+		
+		  <section class="subscribe block">
+		    <div class="wrapper">
+		      <div class="subscribe__wrapper">
+		        <div class="subscribe__desc">
+		          <h2 class="subscribe__title">Join Newsletter</h2>
+		          <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+		        </div>
+		
+		        <form class="subscribe__form form" name="subscribe" method="post" action="#">
+		          <input type="email" class="form__input subscribe__email" placeholder="Enter your email">
+		          <input type="submit" class="btn form__btn subscribe__join" value="Subscribe">
+		        </form>
+		      </div>
+		    </div>
+		  </section>
+		</main>
+		<footer class="main-footer block block--dark-grey">
+		  <div class="wrapper">
+		    <div class="main-footer__wrapper">
+		      <div class="main-footer__copyright copyright">
+		        <a href="#" class="copyright__logo">
+		          <img src="img/logo-footer.svg" class="copyright__img" width="137" height="28" alt="Bukee logo">
+		        </a>
+		        <p class="copyright__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		        <p class="copyright__text">&copy; 2018 Bukee Private Limited.</p>
+		      </div>
+		
+		      <div class="main-footer__links links">
+		        <h2 class="links__title">Useful Links</h2>
+		
+		        <ul class="links__list">
+		          <li class="links__item">
+		            <a href="" class="links__link">About Bukee</a>
+		          </li>
+		          <li class="links__item">
+		            <a href="" class="links__link">Explore Our Ecosystem</a>
+		          </li>
+		          <li class="links__item">
+		            <a href="" class="links__link">Monthly Community Meetup</a>
+		          </li>
+		          <li class="links__item">
+		            <a href="" class="links__link">Privacy Policy</a>
+		          </li>
+		        </ul>
+		      </div>
+		
+		      <div class="main-footer__contacts contacts">
+		        <h2 class="contacts__title">Our Contacts</h2>
+		
+		        <p class="contacts__text">Amphitheatre Parkway, CA, 94043</p>
+		
+		        <p class="contacts__text">Call us on: <a href="tel:+4455663322" class="contacts__tel">+4455663322</a></p>
+		
+		        <p class="contacts__text">Email: <a href="mailto:support@bukee.mail" class="contacts__email">support@bukee.mail</a></p>
+		
+		        <ul class="contacts__list">
+		          <li class="contacts__item">
+		            <a href="#" class="contacts__link">
+		              <i class="fab fa-facebook-f"><span class="visually-hidden">Facebook</span></i>
+		            </a>
+		          </li>
+		          <li class="contacts__item">
+		            <a href="" class="contacts__link">
+		              <i class="fab fa-twitter"><span class="visually-hidden">Twitter</span></i>
+		            </a>
+		          </li>
+		          <li class="contacts__item">
+		            <a href="" class="contacts__link">
+		              <i class="fab fa-twitch"><span class="visually-hidden">Twitch</span></i>
+		            </a>
+		          </li>
+		          <li class="contacts__item">
+		            <a href="" class="contacts__link">
+		              <i class="fab fa-youtube"><span class="visually-hidden">YouTube</span></i>
+		            </a>
+		          </li>
+		          <li class="contacts__item">
+		            <a href="" class="contacts__link">
+		              <i class="fab fa-slack-hash"><span class="visually-hidden">Slack</span></i>
+		            </a>
+		          </li>
+		          <li class="contacts__item">
+		            <a href="" class="contacts__link">
+		              <i class="fab fa-whatsapp"><span class="visually-hidden">WhatsApp</span></i>
+		            </a>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</footer>
+		<script src='./js/main.js' defer></script>
+		<script src='https://kit.fontawesome.com/a7c80760d5.js'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+		<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+		<script>
+		  $(document).ready(function() {
+		    $('#contentsMore').click(function() {
+		      $('#contentsList').slideDown('fast');
+		      $('#contentsMore').hide();
+		    });
+		
+		    $('.carousel').slick({
+		      arrows: false,
+		      dots: true,
+		      infinite: true,
+		    });
+		
+		    if($(window).width() <= 768) {
+		      $('#main-nav-btn').removeClass('main-nav__btn--close');
+		      $('#main-nav').addClass('main-nav__list--hidden');
+		    } else {
+		      $('#main-nav').removeClass('main-nav__list--hidden');
+		    }
+		
+		    $(window).resize(function() {
+		      if($(window).width() <= 768) {
+		        $('#main-nav-btn').removeClass('main-nav__btn--close');
+		        $('#main-nav').addClass('main-nav__list--hidden');
+		      } else {
+		        $('#main-nav').removeClass('main-nav__list--hidden');
+		      }
+		    });
+		
+		    $('#main-nav-btn').removeClass('no-js');
+		
+		    $('#main-nav-btn').click(function() {
+		      $('#main-nav-btn').toggleClass('main-nav__btn--close');
+		      $('#main-nav').toggleClass('main-nav__list--hidden');
+		    });
+		  });
+		</script>
+	</body>
+</html>
